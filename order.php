@@ -63,7 +63,7 @@
     <div id="site_content">
         <div class="sidebar">
             <h1>Keresés</h1>
-            <form method="post" action="#" id="search_form">
+            <form method="post" action="db.php" id="search_form">
                 <p>
                     <input class="search" type="text" name="search_field" placeholder="Adja meg a kulcsszavat....." />
                     <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
@@ -76,22 +76,22 @@
                 <li><a href="#">Kaktuszok</a></li>
                 <li><a href="#">Fák</a></li>
             </ul>
-            <h1>Latest News</h1>
-            <h4>New Website Launched</h4>
-            <h5>January 1st, 2010</h5>
-            <p>2010 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+
 
 
         </div>
         <div id="content">
-            <form id="urlap">
+
+            <form id="urlap" method="post" action="db.php" >
                 <fieldset>
                     <legend>Személyes adatok</legend>
                     <label for="first_name">Keresztnév: </label><input type="text" id="first_name" name="first_name"  onchange="myFunction(this)" onfocus="turnToYellow(this)" >*<span id="first_name_error" class="error"></span><br><br>
                     <label for="last_name">Vezetéknév: </label><input type="text" id="last_name" name="last_name"  onchange="myFunction(this)" onfocus="turnToYellow(this)">*<span id="last_name_error" class="error"></span><br><br>
-                    <label for="address">Lakcím: </label><input type="text" id="address" name="address"  onchange="myFunction(this)" onfocus="turnToYellow(this)">*<span id="address_error" class="error" ></span><br><br>
+
+
                     <label for="email">E-mail cím: </label><input type="email" id="email" name="email" onchange="myFunction(this)" onfocus="turnToYellow(this)">*<span id="email_error" class="error"  ></span><br><br>
-                    <label for="telephone">Telefon: </label><input type="text" id="telephone" name="telephone"  onchange="myFunction(this)" onfocus="turnToYellow(this)">*<span id="telephone_error" class="error"></span><br><br>
+                    <label for="address">Lakcím: </label><input type="text" id="address" name="address"  onchange="myFunction(this)" onfocus="turnToYellow(this)">*<span id="address_error" class="error" ></span><br><br>
+                    <label for="phone">Telefon: </label><input type="text" id="phone" name="phone"  onchange="myFunction(this)" onfocus="turnToYellow(this)">*<span id="phone_error" class="error"></span><br><br>
 
                     <input type="submit" name="sg" value="Küld">
                     <input type="reset" name="rg" value="Mégse">
@@ -117,3 +117,4 @@
 </body>
 
 </html>
+
